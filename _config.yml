@@ -1,5 +1,5 @@
 
 title: "Stream Studio"
 remote_theme: pmarsceill/just-the-docs
-theme: just-the-docs
+theme: jekyll-theme-cayman
 search_enabled: false
