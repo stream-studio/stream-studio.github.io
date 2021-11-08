@@ -1,5 +1,65 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-title: "Stream Studio"
-remote_theme: pmarsceill/just-the-docs
-theme: just-the-docs
-search_enabled: false
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Stream Studio
+author: Ludovic Bouguerra
+email: ludovic.bouguerra@stream.studio
+phone: +33 6 81 93 15 60
+
+description: Video Mixer and Low Latency Streaming solutions
+picture: /images/logo.png
+headline1: Video Mixer and Low Latency Streaming solutions
+headline2: "#Web #Mobile #Video #Embarqué #Streaming"
+ga: 'UA-37459187-1'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://stream.studio" # the base hostname & protocol for your site, e.g. http://example.com
+portfolio:
+  - picture: images/home/portfolio/kalyzee.png
+    name: Kalyzée
+  - picture: images/home/portfolio/epitech.png
+    name: Epitech
+  - picture: images/home/portfolio/amu.png
+    name: Aix Marseille Université
+  - picture: images/home/portfolio/cnrs.png
+    name: Laboratoire d'Astrophysique de Marseille
+  - picture: images/home/portfolio/gep.png
+    name: Groupe École pratique 
+  - picture: images/home/portfolio/otonomy-aviation.png
+    name: Otonomy aviation 
+  - picture: images/home/portfolio/cs.png
+    name: CS Group
+  - picture: images/home/portfolio/colas.png
+    name: Colas     
+twitter_username: LBouguerra
+github_username:  stream-studio
+linkedin: https://www.linkedin.com/company/stream-studio-app/
+gplus_username: LudovicBouguerra
+skype_username: ludovic.bouguerra
+plugins:
+  - jekyll-paginate
+paginate: 5
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+sass:
+    style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+sass:
+    sass_dir: _sass
+plugins:
+  - jekyll-redirect-from

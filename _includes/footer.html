@@ -1,0 +1,33 @@
+
+<footer id="footer">
+        <div class="container main">
+            <div class="mx-auto four columns">
+                <ul class="social-footer">
+                  <li><a href="https://twitter.com/{{site.twitter_username}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://github.com/{{site.github_username}}" target="_blank"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<!-- End Document
+================================================== -->
+{% if jekyll.environment != "development" %}
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{site.ga}}']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+{% endif %}
+
+
+</body>
+</html>

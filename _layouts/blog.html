@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="mx-auto thirteen columns list">
+{% for post in site.posts %}
+
+  <article class="{% if forloop.first %}first{% elsif forloop.last %}last{% else %}middle{% endif %}">
+		<div class="article-head">
+      {% if post.thumbnail %}
+      <div class="thumbnail">
+        <a href="{{ site.url }}{{ post.url }}"><img src="{{post.thumbnail}}" /></a>
+        <h2 class="title"><a href="{{ site.url }}{{ post.url }}" class="js-pjax">{{ post.title }}</a></h2>
+      </div>
+      {% else %}
+        <h2 class="title"><a href="{{ site.url }}{{ post.url }}" class="js-pjax">{{ post.title }}</a></h2>
+      {% endif %}
+			<p class="date">{{ post.date | date_to_string }}</p>
+		</div><!--/.article-head-->
+		<div class="article-content">
+		{{ post.long_description }}
+    </div><!--/.article-content-->
+
+		<a href="{{ site.url }}{{ post.url }}" class="full-post-link more">Lire l'article complet
+</a>
+	</article>
+	{% if forloop.last %}{% else %}<div class="separater"></div>{% endif %}
+{% endfor %}
+</div>

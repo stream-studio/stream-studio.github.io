@@ -1,0 +1,23 @@
+{% include header.html %}
+
+    <div class="home">
+   
+    <hr />
+    <section id="references">
+
+    	<div class="container">
+            <div class="sixteen columns"><h1>Références</h1></div>
+            <div class="references">
+              {% for portfolio in site.portfolio %}
+                <div class="four columns">
+                  <div class="icon"><img src="{{portfolio.picture}}" alt="{{portfolio.name}}" /></div>
+                </div>
+              {% endfor %}
+
+            </div>
+        </div>
+    </section>
+
+  </div>
+    
+{% include footer.html %}
