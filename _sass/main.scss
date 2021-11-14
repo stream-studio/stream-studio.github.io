@@ -8,6 +8,10 @@
 
 @import url(//fonts.googleapis.com/css?family=Lato:300,400);
 
+ul, ol{
+  margin: 0;
+}
+
 
 #post-page .content{
   margin-top: 20px;
@@ -23,9 +27,6 @@ article ul{
   margin-bottom: 20px;
 }
 
-
-article li{
-}
 
 
 article img {
@@ -58,7 +59,7 @@ article .thumbnail h2.title{
   margin-top: 10px;
 }
 
-body, h1, h2, h3, h4,{
+body, h1, h2, h3, h4{
     font-family: 'Lato', sans-serif;
     font-weight:300;
     font-size: 13pt;
@@ -357,8 +358,10 @@ section h1{
 *   Header
 */
 #header{
-    background-color:rgb(37, 0, 213);
-    height: 400px;
+  background: rgb(27,27,172);
+  background: linear-gradient(157deg, rgba(27,27,172,1) 0%, rgba(0,70,195,1) 100%);
+  height: 700px;
+  padding-top: 10;
 }
 
 #header .menu{
@@ -367,7 +370,6 @@ section h1{
 
 #header .menu a{
   font-size:10pt;
-
 }
 
 #header .menu a, h1, h2{
@@ -378,11 +380,30 @@ section h1{
 }
 
 
-#header .profile{
-  float: left;
-  border-radius: 20px;
-  height: 200px;
-  margin-right: 50px;
+
+.logo-header-container{
+  display: flex;
+  align-items: center;
+}
+.logo-header-container .company-name {
+  margin-left: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 15pt;
+}
+.menu-menu-principal-container{
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+}
+
+#header .tagline{
+  margin-top: 200px;
+}
+
+#header .logo{
+  height: 50px;
 }
 
 .text-center{
@@ -438,10 +459,15 @@ article h2{
 }
 
 
+#header ul{
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
 #header ul li{
-    margin-left: 20px;
-    line-height: 80px;
-    display:inline-block;
+  margin: 10px;
 
 }
 
@@ -460,9 +486,6 @@ h2.title a:hover{
     margin-left: auto!important;
     float: none !important;
     display: block !important;
-}
-
-.contact{
 }
 
 /**
@@ -617,6 +640,19 @@ ol {
   @media only screen and (max-width: 767px) {
         #header{
             height: 350px;
+        }
+
+        .menu-menu-principal-container{
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .logo-header-container .company-name {
+            font-weight: 300;
+            font-size: 11pt;
+        }
+
+        #header .tagline{
+          margin-top: 50px;
         }
         #header h1{
           margin-top: 10px;
